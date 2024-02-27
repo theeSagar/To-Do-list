@@ -1,4 +1,4 @@
-                                           **Instructions ToRun This Project **
+                                           Instructions ToRun This Project 
 
 1. **Download the Files**: Download the HTML, CSS, and JavaScript files provided in the project.
 
