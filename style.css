@@ -1,0 +1,134 @@
+body {
+    background-color: #f7d9d9;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 360px;
+    margin: 50px auto;
+    padding: 35px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #444;
+}
+
+.inputs {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 280px;
+    padding: 10px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 13px;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+.text {
+    text-align: left;
+}
+
+.task-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    position: relative;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item.completed {
+    background-color: #d3e0dc;
+}
+
+.task-item i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.task-item .fa-check-circle {
+    right: 35px;
+    color: #38b000;
+}
+
+.task-item .fa-trash {
+    right: 10px;
+    color: #f44336;
+}
+
+.task-item i:hover {
+    color: #333;
+}
+
+/* Adding responsiveness */
+
+/* Base styles */
+
+/* Styles for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .task-item i {
+        font-size: 20px;
+    }
+}
+
+/* Styles for screens larger than 600px */
+@media screen and (min-width: 601px) {
+    .container {
+        width: 360px;
+        margin: 50px auto;
+        padding: 35px;
+    }
+
+    input {
+        width: 280px;
+    }
+
+    button {
+        width: 100px;
+    }
+}
+
